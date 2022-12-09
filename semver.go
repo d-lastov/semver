@@ -25,7 +25,7 @@ func Parse(sv string) (*SemVer, error) {
 		return nil, errors.New("invalid semver-go string passed")
 	}
 
-	pv := strings.Split(".", sv)
+	pv := strings.Split(sv, ".")
 	pints := make([]uint64, 3)
 	for i, v := range pv {
 		pi, err := strconv.ParseUint(v, 10, 64)
