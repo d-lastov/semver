@@ -1,4 +1,4 @@
-module semver
+module github.com/d-lastov/semver
 
 go 1.19
 
