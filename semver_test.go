@@ -1,4 +1,4 @@
-package semver
+package semver_go
 
 import (
 	"github.com/stretchr/testify/assert"

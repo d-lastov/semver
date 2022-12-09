@@ -1,4 +1,4 @@
-package semver
+package semver_go
 
 import (
 	"errors"
@@ -22,7 +22,7 @@ func NewSemVer(major uint64, minor uint64, patch uint64) *SemVer {
 
 func Parse(sv string) (*SemVer, error) {
 	if !IsValid(sv) {
-		return nil, errors.New("invalid semver string passed")
+		return nil, errors.New("invalid semver-go string passed")
 	}
 
 	pv := strings.Split(".", sv)
